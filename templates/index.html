@@ -1,0 +1,24 @@
+
+<body>
+<link rel="stylesheet" href="{{ url_for('static', filename='rot.css') }}">
+<img src= "{{ url_for('static', filename='Ying_Yang_Sun_and_Moon.png') }}" id="ying-yang">
+{% block content %}
+<h1 id="header">Astrom</h1>
+<div id="ying-yang"></div>
+
+<p id="description1">Hello There!, Welcome to Astrom!. This is a site meant to give simple astrological/psychological profiles, which uses a system based on western and chinese astrology.</p>
+<p id="description3">You might get an astrological profile different to your usual one. It's no distortion, this system is based on different astro-charts.</p>
+<p id="description2">To use: simply put your date of birth and submit!</p>
+
+<form method="POST" action="/" name="astrom" id="forma">
+    
+    {{ form.hidden_tag() }}
+    {{ form.dob}}
+    <button class="boton" >submit</button>
+</form>
+<div id="perfil">{{ perfil }}</div>
+
+
+{% endblock %}
+</body>
+

@@ -1,0 +1,40 @@
+#perfil, #description1, #description2, #description3, #header{
+    color: rgb(250, 241, 192);
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: Helvetica;
+}
+
+#forma{
+    margin-left: 20%;
+}
+
+
+body {
+	background-image: url('9JK9Gzs.png');
+	background-size: cover; 
+	background-position: center center; 
+	background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+
+#ying-yang {
+    position: fixed;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    opacity: 0.2;
+    overflow: hidden;
+    -webkit-animation: rotation 100s infinite linear;
+    z-index: -1;
+}
+
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359.99deg);
+    }
+}
